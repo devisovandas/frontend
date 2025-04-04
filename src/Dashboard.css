@@ -1,0 +1,28 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 1200px;
+  }
+  
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  .chart-grid > div {
+    background-color: white; /* Optional: Add background color for better visibility */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  }
+  
+  @media (max-width: 1200px) {
+    .chart-grid {
+      grid-template-columns: 1fr;
+    }
+  }  
